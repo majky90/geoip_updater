@@ -1,0 +1,29 @@
+name: Release Module
+
+on:
+  push:
+    tags:
+      - 'v*' # Spustí sa iba pri vytvorení tagu, napr. v1.0.1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create ZIP
+        run: |
+          mkdir -p build/geoip_updater
+          # Skopírujeme len potrebné súbory
+          cp -r controllers translations views geoip_updater.php index.php LICENSE build/geoip_updater/
+          # Vytvoríme ZIP
+          cd build
+          zip -r geoip_updater.zip geoip_updater
+
+      - name: Upload Release Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/geoip_updater.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
