@@ -14,11 +14,11 @@ This module provides an automated way to keep your **GeoLite2-City** database up
 
 ## 🛠 Installation
 
-1. Go to the [Releases](https://github.com/majky90/geoip_updater/releases) page of this repository.
-2. Download the latest `geoip_updater.zip` file.
-3. In your PrestaShop Back Office, go to **Modules > Module Manager**.
-4. Click **Upload a module** and select the downloaded ZIP file.
-5. Once installed, click **Configure** to set up your Cron task and security token.
+
+1. Stiahnite si najnovší balík z časti **[Releases](https://github.com/majky90/geoip_updater/releases/latest)**.
+2. V administrácii vášho e-shopu prejdite do sekcie **Modules > Module Manager**.
+3. Kliknite na **Upload a module** a vyberte stiahnutý súbor `geoip_updater.zip`.
+4. Po úspešnej inštalácii kliknite na tlačidlo **Configure**.
 
 ## 📅 Scheduled Updates (Cron)
 To automate the update (e.g., every Tuesday and Friday), add the following to your server's crontab:
