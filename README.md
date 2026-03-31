@@ -14,7 +14,7 @@ This module provides an automated way to keep your **GeoLite2-City** database up
 
 ## 🛠 Installation
 
-1. Go to the [Releases](https://github.com/webvision-sk/geoip_updater/releases) page of this repository.
+1. Go to the [Releases](https://github.com/majky90/geoip_updater/releases) page of this repository.
 2. Download the latest `geoip_updater.zip` file.
 3. In your PrestaShop Back Office, go to **Modules > Module Manager**.
 4. Click **Upload a module** and select the downloaded ZIP file.
