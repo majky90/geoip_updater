@@ -19,7 +19,6 @@ $_MODULE['<{geoip_updater}prestashop>geoip_updater_d83d20cfbf265e07a2e1a83d7be93
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_f8ab7e5acf40c06bf1d7ec95209ff677'] = 'Databáza GeoLite2 bola úspešne aktualizovaná.';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_156fa08f21710c9bf6df43184e01b62e'] = 'Neplatný token.';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_9eed9e3afd34943c47752aeb6bb19e2f'] = 'Odporúčaný rozvrh:';
-$_MODULE['<{geoip_updater}prestashop>geoip_updater_d3bf4e0dcb198244e980ff0bed965153'] = 'Plán: Každý utorok a piatok o 06:00 UTC. Nastavte si cron podľa toho, aby bola databáza aktuálna.';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_0177fb273a3bcd4ffe92e9de9d604b7f'] = 'Stav databázy';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_2a8eb028670e972535e8e246be645821'] = 'Existuje';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_2aee0be2678ee90fd327cc186826438e'] = 'Chýba';
@@ -29,8 +28,8 @@ $_MODULE['<{geoip_updater}prestashop>geoip_updater_bce9cc6b33b29f89a28b7809709c9
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_1959003441ffe38f4f49b9738895f358'] = 'Použite nasledujúcu URL vo svojom cronjob-e:';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_9de711d6eb379d46caa26e86cdafa0e9'] = 'Skopírovať URL';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_516e42340f2cf98b96910bca59b66fcc'] = 'Príklad pre cron: 0 6 * * 2,5';
-$_MODULE['<{geoip_updater}prestashop>geoip_updater_4fab1cf50b7459fc609bf3bd3b172ccc'] = 'Plán: Každý utorok a piatok o 06:00 UTC - cron výraz: 0 6 * * 2,5';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_53cb3afbbe2f8769b4b48b07c4f8b2d9'] = 'Použite nižšie uvedenú URL vo svojom cron jobe. Naplánujte ho tak, aby bežal po generovaní databázy, nie presne o 06:00 UTC.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_9bd28107194afd270b9d23e052ac4937'] = 'Časové pásmo servera:';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_06e4be66ab3ca044a31371cbd321ab2e'] = 'Manuálna aktualizácia';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_6d6db52799620de23c1e87d00abde8c4'] = 'Skopírované!';
 $_MODULE['<{geoip_updater}prestashop>geoip_updater_6e7b34fa59e1bd229b207892956dc41c'] = 'Nikdy';

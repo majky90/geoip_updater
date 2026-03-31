@@ -8,7 +8,7 @@
     <div class="card-body">
         <div class="alert alert-info">
             <strong>{$module->l('Recommended schedule:')|escape:'html':'UTF-8'}</strong>
-            {$module->l('Schedule: Every Tuesday and Friday at 06:00 UTC. Set your cron job to run after this time, not at the exact moment the GeoIP file is generated.')|escape:'html':'UTF-8'}
+            Every Tuesday and Friday at 06:00 UTC. Set your cron job to run after this time, not at the exact moment the GeoIP file is generated.
         </div>
 
         <div class="row mb-4">
@@ -24,6 +24,9 @@
                             {/if}
                         </p>
                         <p><strong>{$module->l('Last update:')|escape:'html':'UTF-8'}</strong> {$last_update|escape:'html':'UTF-8'}</p>
+                        {if $server_timezone}
+                            <p class="mb-2"><small class="text-muted">{$module->l('Server timezone:')|escape:'html':'UTF-8'} {$server_timezone|escape:'html':'UTF-8'}</small></p>
+                        {/if}
                         <p><strong>{$module->l('Database path:')|escape:'html':'UTF-8'}</strong> {$mmdb_path|escape:'html':'UTF-8'}</p>
                     </div>
                 </div>
@@ -33,15 +36,15 @@
                     <div class="card-header">{$module->l('Cron configuration')|escape:'html':'UTF-8'}</div>
                     <div class="card-body">
                         <p>{$module->l('Use the full URL below in your cron job. Schedule it to run after the database generation time, not exactly at 06:00 UTC.')|escape:'html':'UTF-8'}</p>
-                        <div class="input-group mb-3">
-                            <textarea id="geoip-cron-url" class="form-control" rows="2" readonly>{$cron_url|escape:'html':'UTF-8'}</textarea>
-                            <div class="input-group-append">
-                                <button type="button" class="btn btn-outline-secondary" id="copy-cron-url">
-                                    {$module->l('Copy URL')|escape:'html':'UTF-8'}
-                                </button>
-                            </div>
+                        <div class="form-group mb-3">
+                            <textarea id="geoip-cron-url" class="form-control" rows="2" readonly style="resize: none;">{$cron_url|escape:'html':'UTF-8'}</textarea>
                         </div>
-                        <p class="small text-muted">{$module->l('Schedule: Every Tuesday and Friday at 06:00 UTC - cron expression: 0 6 * * 2,5')|escape:'html':'UTF-8'}</p>
+                        <div class="form-group mb-3 text-right">
+                            <button type="button" class="btn btn-outline-secondary" id="copy-cron-url">
+                                {$module->l('Copy URL')|escape:'html':'UTF-8'}
+                            </button>
+                        </div>
+                        <p class="small text-muted">Schedule: Every Tuesday and Friday at 06:00 UTC - cron expression: 0 6 * * 2,5</p>
                     </div>
                 </div>
             </div>

@@ -85,6 +85,21 @@ class geoip_updater extends Module
         return true;
     }
 
+    protected function getServerTimezone(): string
+    {
+        $timezone = Configuration::get('PS_TIMEZONE');
+        if ($timezone) {
+            try {
+                new DateTimeZone($timezone);
+                return $timezone;
+            } catch (Exception $e) {
+                // fall back to PHP default timezone
+            }
+        }
+
+        return date_default_timezone_get();
+    }
+
     public function getContent()
     {
         $output = '';
@@ -107,13 +122,32 @@ class geoip_updater extends Module
         $mmdbPath = _PS_ROOT_DIR_ . '/app/Resources/geoip/GeoLite2-City.mmdb';
         $fileExists = file_exists($mmdbPath);
         $lastUpdate = Configuration::get('GEOIP_UPDATER_LAST_UPDATE');
+        $serverTimezone = date_default_timezone_get();
+
+        if ($lastUpdate) {
+            $date = DateTime::createFromFormat(
+                'Y-m-d H:i:s',
+                $lastUpdate,
+                new DateTimeZone($serverTimezone)
+            );
+            if ($date) {
+                $lastUpdate = $date->format('Y-m-d H:i:s');
+            } else {
+                $lastUpdate = $this->l('Never');
+                $serverTimezone = '';
+            }
+        } else {
+            $lastUpdate = $this->l('Never');
+            $serverTimezone = '';
+        }
 
         $this->context->smarty->assign([
             'file_exists' => $fileExists,
-            'last_update' => $lastUpdate ?: $this->l('Never'),
+            'last_update' => $lastUpdate,
             'cron_url' => $cronUrl,
             'token' => $token,
             'mmdb_path' => $mmdbPath,
+            'server_timezone' => $serverTimezone,
             'module' => $this,
         ]);
 
