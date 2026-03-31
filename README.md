@@ -13,9 +13,12 @@ This module provides an automated way to keep your **GeoLite2-City** database up
 - **Admin Dashboard:** View file status, size, and last update time directly in your Back Office.
 
 ## 🛠 Installation
-1. Download the repository as a `.zip` file.
-2. Upload and install the module in your PrestaShop Back Office.
-3. Go to the module configuration to get your unique **Cron URL**.
+
+1. Go to the [Releases](https://github.com/webvision-sk/geoip_updater/releases) page of this repository.
+2. Download the latest `geoip_updater.zip` file.
+3. In your PrestaShop Back Office, go to **Modules > Module Manager**.
+4. Click **Upload a module** and select the downloaded ZIP file.
+5. Once installed, click **Configure** to set up your Cron task and security token.
 
 ## 📅 Scheduled Updates (Cron)
 To automate the update (e.g., every Tuesday and Friday), add the following to your server's crontab:
