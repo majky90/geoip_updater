@@ -1,0 +1,38 @@
+<?php
+
+global $_MODULE;
+$_MODULE = [];
+
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_a8bee9732201b8c78ac8047191210ad8'] = 'Aktualizátor databázy GeoLite2';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_1132dcdce7a13fcdeffeb6fc3141113f'] = 'Sťahuje a automaticky aktualizuje databázu GeoLite2 City.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_3101651f4ff68d11e0967a25d7e4b5de'] = 'Nebolo možné vytvoriť adresár pre uloženie GeoIP.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_c3b0fc875a2c88d3fea773d72839bfec'] = 'Nebolo možné zabezpečiť existenciu adresára GeoIP.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_59d30102eb8d3c0c8b031e08a28acd28'] = 'Sťahovanie zlyhalo: ';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_28eba835328ebb1c8e67cd8f2417d834'] = 'Stiahnutý archív je prázdny.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_c4af62dcb33e8bf9360a8892dfbf2b44'] = 'Nebolo možné otvoriť stiahnutý archív.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_6881d7f98606771d20f322f757a9bfd9'] = 'Nebolo možné vytvoriť dočasný databázový súbor.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_b721cf1744de14c238bbef3980e632dd'] = 'Nebolo možné čítať z komprimovaného archívu.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_67e163285be85c73c334bc1aa95c4e55'] = 'Nebolo možné rozbaliť databázový súbor: ';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_dd31940a0408acdf1d57688eda88199f'] = 'Rozbalený databázový súbor je príliš malý alebo neplatný.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_937353d59d93fb251c123f94bc80b557'] = 'Nebolo možné nahradiť existujúci databázový súbor.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_d83d20cfbf265e07a2e1a83d7be93286'] = 'Nebolo možné presunúť databázový súbor na miesto.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_f8ab7e5acf40c06bf1d7ec95209ff677'] = 'Databáza GeoLite2 bola úspešne aktualizovaná.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_156fa08f21710c9bf6df43184e01b62e'] = 'Neplatný token.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_9eed9e3afd34943c47752aeb6bb19e2f'] = 'Odporúčaný rozvrh:';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_d3bf4e0dcb198244e980ff0bed965153'] = 'Plán: Každý utorok a piatok o 06:00 UTC. Nastavte si cron podľa toho, aby bola databáza aktuálna.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_0177fb273a3bcd4ffe92e9de9d604b7f'] = 'Stav databázy';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_2a8eb028670e972535e8e246be645821'] = 'Existuje';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_2aee0be2678ee90fd327cc186826438e'] = 'Chýba';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_6d2e7477916d118eb0a377fd13af4f63'] = 'Posledná aktualizácia:';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_e98692f8975e1090f4d89c881e1a939f'] = 'Cesta k databáze:';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_bce9cc6b33b29f89a28b7809709c99ce'] = 'Nastavenie cronu';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_1959003441ffe38f4f49b9738895f358'] = 'Použite nasledujúcu URL vo svojom cronjob-e:';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_9de711d6eb379d46caa26e86cdafa0e9'] = 'Skopírovať URL';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_516e42340f2cf98b96910bca59b66fcc'] = 'Príklad pre cron: 0 6 * * 2,5';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_4fab1cf50b7459fc609bf3bd3b172ccc'] = 'Plán: Každý utorok a piatok o 06:00 UTC - cron výraz: 0 6 * * 2,5';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_53cb3afbbe2f8769b4b48b07c4f8b2d9'] = 'Použite nižšie uvedenú URL vo svojom cron jobe. Naplánujte ho tak, aby bežal po generovaní databázy, nie presne o 06:00 UTC.';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_06e4be66ab3ca044a31371cbd321ab2e'] = 'Manuálna aktualizácia';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_6d6db52799620de23c1e87d00abde8c4'] = 'Skopírované!';
+$_MODULE['<{geoip_updater}prestashop>geoip_updater_6e7b34fa59e1bd229b207892956dc41c'] = 'Nikdy';
+
+return $_MODULE;

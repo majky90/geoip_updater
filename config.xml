@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <name>geoip_updater</name>
+    <displayName>GeoLite2 Database Updater</displayName>
+    <version>1.0.2</version>
+    <author>Marián Varga - webvision.sk</author>
+    <tab>administration</tab>
+    <description>Downloads and updates the GeoLite2 City database automatically.</description>
+    <need_instance>0</need_instance>
+    <ps_versions_compliancy>
+        <min>1.7.0.0</min>
+        <max>9.9.9</max>
+    </ps_versions_compliancy>
+</module>
