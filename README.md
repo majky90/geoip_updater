@@ -21,4 +21,4 @@ This module provides an automated way to keep your **GeoLite2-City** database up
 To automate the update (e.g., every Tuesday and Friday), add the following to your server's crontab:
 
 ```bash
-15 8 * * 2,5 curl -s "[https://your-domain.com/index.php?fc=module&module=geoip_updater&controller=update&token=YOUR_TOKEN](https://your-domain.com/index.php?fc=module&module=geoip_updater&controller=update&token=YOUR_TOKEN)" > /dev/null
+15 8 * * 2,5 curl -s "https://domain.com/module/geoip_updater/update?token=TOKEN" > /dev/null
