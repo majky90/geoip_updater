@@ -1,7 +1,7 @@
 /**
  * @author    Marián Varga - webvision.sk
  * @copyright 2026 Marián Varga
- * @license   https://opensource.org/licenses/AFL-3.0  Academic Free License (AFL 3.0)
+ * @license   https://opensource.org/licenses/MIT  MIT License
  */
 
 <?php

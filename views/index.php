@@ -2,7 +2,7 @@
 /**
  * @author    Marián Varga - webvision.sk
  * @copyright 2026 Marián Varga
-* @license   https://opensource.org/licenses/AFL-3.0  Academic Free License (AFL 3.0)
+ * @license   https://opensource.org/licenses/MIT  MIT License
  */
 
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
