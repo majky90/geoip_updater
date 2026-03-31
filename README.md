@@ -25,3 +25,10 @@ To automate the update (e.g., every Tuesday and Friday), add the following to yo
 
 ```bash
 15 8 * * 2,5 curl -s "https://domain.com/module/geoip_updater/update?token=TOKEN" > /dev/null
+
+## 📄 Licencia
+
+Tento projekt je šírený pod licenciou **MIT**. Viac informácií nájdete v súbore [LICENSE](LICENSE).
+
+---
+Autor: [Marián Varga - webvision.sk](https://webvision.sk)
