@@ -1,3 +1,9 @@
+/**
+ * @author    Marián Varga - webvision.sk
+ * @copyright 2026 Marián Varga
+ * @license   https://opensource.org/licenses/AFL-3.0  Academic Free License (AFL 3.0)
+ */
+
 <?php
 
 if (!defined('_PS_VERSION_')) {
